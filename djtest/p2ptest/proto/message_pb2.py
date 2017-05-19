@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='message.proto',
   package='',
   syntax='proto2',
-  serialized_pb=_b('\n\rmessage.proto\"$\n\x07Message\x12\x0c\n\x04time\x18\x01 \x02(\x04\x12\x0b\n\x03msg\x18\x02 \x02(\t')
+  serialized_pb=_b('\n\rmessage.proto\"$\n\x07Message\x12\x0c\n\x04time\x18\x01 \x02(\t\x12\x0b\n\x03msg\x18\x02 \x02(\t')
 )
 
 
@@ -34,8 +34,8 @@ _MESSAGE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='time', full_name='Message.time', index=0,
-      number=1, type=4, cpp_type=4, label=2,
-      has_default_value=False, default_value=0,
+      number=1, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
