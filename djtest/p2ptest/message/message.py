@@ -13,9 +13,9 @@ class Message:
             if not (hashdata in Message.getdata):
                 Message.getdata.add(hashdata)
                 print "==== get new message ===="
-                print "decode before"
+                print "=== decode before ==="
                 print serilaMsg
-                print "decode after"
+                print "=== decode after ==="
                 pb2=message_pb2.Message()
                 pb2.ParseFromString(serilaMsg)
                 print "time: " + pb2.time
