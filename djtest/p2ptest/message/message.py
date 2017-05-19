@@ -19,7 +19,7 @@ class Message:
                 pb2=message_pb2.Message()
                 pb2.ParseFromString(serilaMsg)
                 print "time: " + pb2.time
-                print "message: " pb2.msg
+                print "message: " + pb2.msg
                 sock.broadcast(serilaMsg)
         except Exception as e:
             print e
