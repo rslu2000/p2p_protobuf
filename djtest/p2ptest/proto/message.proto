@@ -1,0 +1,4 @@
+message Message{
+    required float time = 1;
+    required string msg = 2;
+}
