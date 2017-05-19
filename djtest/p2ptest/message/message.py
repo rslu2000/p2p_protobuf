@@ -18,7 +18,7 @@ class Message:
                 print "=== decode after ==="
                 pb2=message_pb2.Message()
                 pb2.ParseFromString(serilaMsg)
-                print "time: " + pb2.time
+                print "time: " + str(pb2.time)
                 print "message: " + pb2.msg
                 sock.broadcast(serilaMsg)
         except Exception as e:
