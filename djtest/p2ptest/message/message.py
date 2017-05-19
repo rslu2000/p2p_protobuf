@@ -28,7 +28,7 @@ class Message:
     @staticmethod
     def send(body):
         pb2=message_pb2.Message()
-        pb2.time=time.time()
+        pb2.time=int(time.time())
         pb2.msg=body
         serilaMsg=pb2.SerializeToString()
         p2p_module.p2p.P2PSocket.broadcast(serilaMsg)

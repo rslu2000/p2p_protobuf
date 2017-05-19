@@ -1,4 +1,4 @@
 message Message{
-    required float time = 1;
+    required uint64 time = 1;
     required string msg = 2;
 }
